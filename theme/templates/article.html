@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block title %}: {{ SITENAME }} - {{ article.title }} {% endblock %}
+
+{% block bodyclass %}is-post{% endblock %}
+{% block content_header %}
+	<header id="header">
+		<a href="/"><div id="logo">
+			Developer's black hole
+		</div></a>
+	</header>
+
+	<article id="post" class="post">
+		<header>
+      <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></br>
+      <time datetime="{{ article.date.isoformat() }}" pubdate>{{ article.locale_date }}</time>
+		</header>
+{% endblock %}
+
+{% block content %}
+    <div class="body">
+      {{ article.content }}
+    </div>
+	<section id="related-posts" class="related archive">
+	  <section>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-via="flaper87" data-size="large" data-related="flaper87">Tweet</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        </section>
+		<nav class="posts">
+      {% if article.tags %}
+			    <h2>Tags</h2>
+			    <ul>
+            {% for tag in article.tags %}
+            <li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a></li>
+            {% endfor %}
+			    </ul>
+            {% endif %}
+		</nav>
+	</section>
+        <p id="press">
+            <img class="avatar" height="72" width="72" src="https://pbs.twimg.com/profile_images/499090935511134208/bcCMqbN9.jpeg"></img>
+            Flavio Percoco is a passionate developer, with interests in
+            languages, cloud computing and distributed architectures. He's
+            currently working for Red Hat where he spends most of his time hacking
+            on OpenStack. Flavio promotes open source, APIs, humility and loves the
+            philosophy behind software and life. Flavio writes on his blog at
+            flaper87.com and tweets on <a href="https://twitter.com/flaper87">@flaper87</a>.
+        </p>
+    </section>
+{% endblock %}
