@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+import os
 
 AUTHOR = u'Flavio Percoco'
 SITENAME = u'Developer\'s black hole'
-SITEURL = 'https://blog.flaper87.com'
+SITEURL = os.environ.get('SITEURL', 'https://blog.flaper87.com')
 #GOOGLE_ANALYTICS = 'UA-54541847-1'
 
 PATH = 'content'
