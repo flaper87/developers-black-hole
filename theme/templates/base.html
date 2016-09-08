@@ -30,11 +30,14 @@
 	</header>
 {% endblock %}
 
-{% block content %}{% endblock %}
-
-	<script src="{{ SITEURL }}/theme/js/app.js"></script>
+  	<script src="{{ SITEURL }}/theme/js/app.js"></script>
 	<script>require('scripts/logo')</script>
 
+{% block content %}{% endblock %}
+
+{% block content_footer %}
   <br/><footer id="footer"> © Flavio Percoco - Theme by <a href="http://www.zenoamaro.com/">Zeno Amaro</a></footer>
+  {% endblock %}
+
 </body>
 </html>
