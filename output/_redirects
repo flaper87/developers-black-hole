@@ -1,1 +1,3 @@
 /post/* /:splat.html
+/feeds/latest /feeds/all.atom.xml
+/feeds/latest/tag/* /feeds/:splat.atom.xml
