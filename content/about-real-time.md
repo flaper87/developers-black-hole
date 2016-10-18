@@ -4,12 +4,12 @@ Author: Flavio Percoco
 Tags: openstack,real-time,distributed,python
 Slug: high-level-real-time-systems
 
-I've been working with `real-time` distributed systems for quite some time
-now. This one of the topics I like the most. In this post I'd like to
-spend some time explaining at a high level what `real-time` systems are, where
-they're used, some of their requirements and I'd also like to conclude the post
-with a small section explaining why I think the term `real-time` is neither
-accurate nor correct to describe these systems.
+I've been working with `real-time` distributed systems for quite some time now.
+This is one of the topics I like the most. In this post I'd like to spend some
+time explaining at a high level what `real-time` systems are, where they're
+used, some of their requirements and I'd also like to conclude the post with a
+small section explaining why I think the term `real-time` is neither accurate
+nor correct to describe these systems.
 
 
 Real Time Systems
