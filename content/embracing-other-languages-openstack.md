@@ -1,5 +1,5 @@
 Title: Embracing new languages in OpenStack
-Date: 2016-11-01
+Date: 2016-11-07
 Author: Flavio Percoco
 Tags: openstack,python,go,open-source
 Slug: embracing-other-languages-openstack
