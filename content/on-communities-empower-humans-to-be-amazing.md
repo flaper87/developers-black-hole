@@ -41,7 +41,7 @@ way humans in the community actually do things. I heard this definition at
 [Zingtrain](https://www.zingtrain.com/) in June 2016 and it stuck with me. Not
 only it makes sense on paper but it's also true in reality.
 
-We spend a huge deal of time defining new processes in OpneStack that would help
+We spend a huge deal of time defining new processes in OpenStack that would help
 the community evolve and adapt itself and we see over and over how many of these
 processes change as soon as other humans start interacting with them. Sometimes
 this interaction ends up in processes being "officially" changed and many times
