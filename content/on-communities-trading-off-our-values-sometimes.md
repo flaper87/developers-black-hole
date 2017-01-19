@@ -1,5 +1,5 @@
 Title: On communities: Trading off our values... Sometimes
-Date: 20167-01-19
+Date: 2017-01-19
 Author: Flavio Percoco
 Tags: openstack,python,communities,open-source
 Slug: on-communities-evaluating-your-own-values
