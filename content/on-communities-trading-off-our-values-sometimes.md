@@ -17,7 +17,7 @@ emotional state.
 I've always considered myself an almost-thick skinned person. Things affect me
 but not in a way that would prevent me from keep moving forward. Most of the
 time, at least. I used to think this was a weakness, I used to think that
-letting this emotions through would slow me down. With time I came to accept it
+letting these emotions through would slow me down. With time I came to accept it
 as a strength. Acknowledging this characteristic of mine has helped me to be
 more open about the relevance of emotions in our daily interactions and to be
 mindful about other folks that, like me, are almost-thick skinned or not even
