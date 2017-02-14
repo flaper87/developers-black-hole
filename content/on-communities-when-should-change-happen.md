@@ -78,3 +78,8 @@ reflect how you can make the community better, what things are slowing down its
 growth and what changes would help you be more inclusive. Waiting until there is
 an actual problem may be the death of your community. The last thing you want to
 do is to drive the wrong people away.
+
+If you liked this post, you may also like:
+
+* [On communities: Empower humans to be amazing](https://blog.flaper87.com/on-communities-empower-humans-to-be-amazing.html)
+* [Keeping up with the pace of a fast growing community without dying](https://www.youtube.com/watch?v=bW_AEmKbB_o)
