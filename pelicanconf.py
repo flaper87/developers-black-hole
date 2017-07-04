@@ -8,7 +8,7 @@ SITEURL = os.environ.get('SITEURL', 'https://blog.flaper87.com')
 #GOOGLE_ANALYTICS = 'UA-54541847-1'
 
 PATH = 'content'
-THEME = './theme'
+THEME = './theme/flaper87'
 
 STATIC_PATHS = ['images']
 EXTRA_PATH_METADATA = {}

@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block title %}: - {{ article.title }} {% endblock %}
+
+{% block bodyclass %}is-post{% endblock %}
+{% block content %}
+<section id="one-section">
+	<ul class="buttons" id="buttons03">
+				<li>
+					<a href="/" class="button n01">Back</a>
+				</li>
+	</ul>
+	<h2 id="text12">{{ article.title }}</h2>
+  <h2 id="text13"><time datetime="{{ article.date.isoformat() }}" pubdate>{{ article.locale_date }}</time></h2>
+	<hr id="divider07" />
+	<p id="text13">{{ article.content }}</p>
+
+  <a href="https://twitter.com/share" class="twitter-share-button" data-via="flaper87" data-size="large" data-related="flaper87">Tweet</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+  <nav class="posts">
+    {% if article.tags %}
+		<h2>Tags</h2>
+		<ul>
+      {% for tag in article.tags %}
+      <li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a></li>
+      {% endfor %}
+		</ul>
+    {% endif %}
+	</nav>
+  <hr id="divider02" />
+  <div class="columns" id="columns03">
+		<div class="inner">
+			<div>
+				<div class="image" id="image03">
+					<img src="assets/images/image03.jpg" alt="" />
+          <p id="text09">Hi. I’m Flavio Percoco (a.k.a flaper87), and I’m a Software Engineer at Red Hat, where I spend my days working on OpenStack, speaking at conferences. In my spare time I contribute to Rust, write, read, surf, travel, smoke my coffee and drink my pipe.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script>
+if(history.pushState) {
+    history.pushState(null, null, '#one');
+}
+else {
+    location.hash = '#one';
+}
+</script>
+{% endblock %}

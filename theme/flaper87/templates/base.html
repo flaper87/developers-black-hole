@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Developer's black hole{% block title %}{% endblock %}</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+		<meta name="description" content="Blog's theme" />
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,400italic%7CSource+Sans+Pro:200,200italic" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="theme/assets/main.css" />
+		<noscript><link rel="stylesheet" href="theme/assets/noscript.css" /></noscript>
+	</head>
+	<body class="is-loading">
+		<div id="wrapper">
+			<div id="main">
+				<div class="inner">
+          {% block content %}{% endblock %}
+					<footer id="footer">
+						<hr id="divider02" />
+						<div class="columns" id="columns04">
+							<div class="inner">
+								<div>
+									<ul class="icons" id="icons01">
+                    <li>
+							        <a class="n01" href="http://twitter.com/flaper87">
+								        <svg><use xlink:href="assets/icons.svg#twitter"></use></svg>
+								        <span class="label">Twitter</span>
+							        </a>
+						        </li><li>
+							        <a class="n02" href="https://nomadlist.com/@flaper87">
+								        <svg><use xlink:href="assets/icons.svg#nomadlist"></use></svg>
+								        <span class="label">Nomad List</span>
+							        </a>
+						        </li><li>
+							        <a class="n03" href="http://github.com/flaper87">
+								        <svg><use xlink:href="assets/icons.svg#github"></use></svg>
+								        <span class="label">GitHub</span>
+							        </a>
+						        </li><li>
+							        <a class="n04" href="https://www.strava.com/athletes/14998360">
+								        <svg><use xlink:href="assets/icons.svg#strava"></use></svg>
+								        <span class="label">Strava</span>
+							        </a>
+						        </li>
+									</ul>
+									<p id="text04">© Flavio Percoco</p>
+								</div>
+							</div>
+						</div>
+					</footer>
+				</div>
+			</div>
+		</div>
+		<script src="theme/assets/main.js"></script>
+	</body>
+</html>

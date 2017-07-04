@@ -1,4 +1,0 @@
-/post/* /:splat.html
-/feeds/latest /feeds/all.atom.xml
-/feeds/latest/tag/:slug /feeds/:slug.atom.xml
-/feeds/latest/tag/:slug/ /feeds/:slug.atom.xml
