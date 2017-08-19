@@ -1,7 +1,7 @@
 Title: Deploy mariadb on kubernetes with TripleO
 Date: 2017-08-07
 Author: Flavio Percoco
-Tags: tripleo,undercloud,oopenstack
+Tags: tripleo,undercloud,openstack
 Slug: deploy-mariadb-kubernetes-tripleo
 
 I've spent quite some time researching how we can migrate TripleO from deploying
