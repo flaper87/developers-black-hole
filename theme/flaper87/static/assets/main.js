@@ -97,8 +97,13 @@ var	on = addEventListener,
 			if ('scrollRestoration' in history)
 				history.scrollRestoration = 'manual';
 
-		// Get current section.
-			h = location.hash;
+       // Get current section.
+       h = location.hash;
+
+       if (location.pathname.endsWith('.html') && !location.pathname.endsWith('/index.html')) {
+          h = '#one'
+       }
+
 			id = h && $('section[id="' + h.substr(1) + '-section"]') ? h.substr(1) : 'home';
 
 		// Deactivate all sections except current.
