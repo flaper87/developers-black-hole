@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}{{ tag }} @ {% endblock %}
+{% block bodyclass %}is-tag{% endblock %}
+
+{% block content %}
+<section id="home-section">
+	<div class="columns" id="columns03">
+		<div class="inner">
+			<div>
+				<div class="image" id="image03">
+					<img src="theme/assets/images/image03.jpg" alt="" />
+				</div>
+				<h1 id="text03">Developer&#39;s black hole</h1>
+				<hr id="divider04" />
+				<p id="text09">Hi. I’m Flavio Percoco (a.k.a flaper87), and I’m a Software Engineer at Red Hat, where I spend my days working on OpenStack, speaking at conferences. In my spare time I contribute to Rust, write, read, surf, travel, smoke my coffee and drink my pipe.</p>
+			</div>
+		</div>
+	</div>
+  {% for article in articles_page.object_list %}
+	<hr id="divider05" />
+	<div class="columns" id="columns01">
+		<div class="inner">
+			<div>
+				<h2 id="text10">{{ article.title }}</h2>
+				<p id="text11">{{ article.summary }}</p>
+				<ul class="buttons" id="buttons04">
+					<li>
+						<a href="/{{article.url}}" class="button n01">More</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+  {% endfor %}
+</section>
+{% endblock %}
